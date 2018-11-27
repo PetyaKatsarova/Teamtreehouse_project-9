@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <a class="MyAweApp">My<b>Awesome</b>App<sup>TM</sup></a>
+        <ul class="headerUl">
+            <li class="svg"><a href="">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5
+                   4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4
+                   1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z"
+                   fill="#fff"/>
+                </svg></a>
+                <a><span class="notification"></span></a>
+                  <div class="dropdown">
+                    <button class="dropbtn"></button>
+                    <div class="dropdown-content">
+                      <a href="#">* You have 3 new e-mails.</a>
+                      <a href="#">* Dale Byrd liked your post.</a>
+                      <a href="#">* Victoria Chambers commented on you post.</a>
+                    </div><!-- "dropdown-content"-->
+                  </div> <!-- "dropdown"-->
+            </li>
+            <li class="avatarPic"><img src="avatarPic.jpg" alt="profile picture" class="avatar"></li>
+            <li><a>Petya K</a></li>
+        </ul>
+      </header>
+      <div class="flexbox">
+        <nav>
+           <a href = ""><img src="icons/icon-dashboard.svg" alt="icon-dashboard"></a>
+           <a href = ""><img src="icons/icon-settings.svg" alt="icon-members"></a>
+           <a href = ""><img src="icons/icon-members.svg" alt="icon-members"></a>
+           <a href =""><img src="icons/icon-visits.svg" alt="icon-members"></a>
+        </nav>
+        <div class="main">
+          <section class = "table">
+             <h3>Dashboard</h3>
+             <div class = "spaceholder">
+                <input type = "text" placeholder="search">
+             </div><!-- .spaceholder  -->
+          </section><!-- .table-->
+             <section class = "traffic">
+              <h2>Traffic</h2>
+              <ul>
+                <li><a href="">Hourly</a></li>
+                <li><a href="">Daily</a></li>
+                <li><a href="">Weekly</a></li>
+                <li><a href="">Monthly</a></li>
+             </ul>
+           </section><!-- .traffic-->
+           <div class="plugin weekly"><!-- line -->
+              <div class="plugin"><canvas id="myChart" ></canvas></div>
+            </div><!-- .plugin-->
+           <section class= "daily_t_m_users">
+             <div class = "daily_traffic">
+                <h2> Daily Traffic</h2>
+                <div class="plugin"><!-- bar -->
+                   <div class="plugin"><canvas id="myChartBar"></canvas></div>
+                </div><!-- .plugin -->
+             </div><!--.daily_traffic-->
+             <div class = "mobile_users">
+                 <h2>Mobile Users</h2>
+                 <div class="plugin"><!-- donut -->
+                    <div class="plugin"><canvas id="myChartDonut"></canvas></div>
+                 </div><!-- .plugin-->
+              </div><!--.mobile_users-->
+              </section>
+           <section class = "social_status">
+               <h2>Social Stats</h2>
+               <div class = "socialMedia">
+                  <ul>
+                      <li>
+                        <div class= "div-icons">
+                          <img src = "icons/icon-twitter.svg" alt="twitter logo"/>
+                        </div><!-- div-icons-->
+                    <p><b>Twitter</b> 10,345</p>
+                      </li>
+                      <li>
+                        <div class= "div-icons">
+                           <img src ="icons/icon-facebook.svg" alt="facebook logo"/>
+                        </div><!-- div-icons-->
+                        <p><b>Facebook</b> 8,739</p>
+                      </li>
+                      <li>
+                        <div class= "div-icons">
+                           <img src ="icons/icon-google-plus.svg" alt="google-plus logo"/>
+                        </div><!-- div-icons-->
+                        <p><b>Google+</b> 2,530</p>
+                      </li>
+                </ul>
+               </div><!-- .socialMedia -->
+           </section>
+           <section class = "newM">
+             <div class = "newMembers flex">
+               <h3>New Members</h3>
+               <ul>
+                  <li>
+                    <img class="images" src="images/member-1.jpg" alt="photo of Victoria">
+                    <p>Victoria Chambers</p>
+                    <a href="">victoria.chambers80@example.com</a>
+                    <p class="date">18/10/18</p>
+                  </li>
+                  <li>
+                    <img class="images" src="images/member-2.jpg" alt="photo of Dale">
+                    <p>Dale Byrd</p>
+                    <a href="">dale.byrd52@example.com</a>
+                    <p class="date">18/10/18</p>
+                  </li>
+                  <li>
+                    <img class="images" src="images/member-3.jpg" alt="photo of Dawn">
+                    <p>Dawn Wood</p>
+                    <a href="">dawn.wood16@example.com</a>
+                    <p class="date">18/10/18</p>
+                  </li>
+                  <li>
+                    <img class="images" src="images/member-4.jpg" alt="photo of Dan">
+                    <p>Dan Oliver</p>
+                    <a href="">dan.oliver82@example.com</a>
+                    <p class="date">18/10/18</p>
+                  </li>
+               </ul>
+             </div><!--.newMembers-->
+             <div class = "recentActivity flex">
+               <h3>Recent Activity</h3>
+               <ul>
+                  <li>
+                    <img class="images" src="images/member-1.jpg" alt="photo of Victoria">
+                    <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+                    <p>4 hours ago</p>
+                    <a href=""><i class="arrow right"></i></a>
+                  </li>
+                  <li>
+                    <img class="images" src="images/member-2.jpg" alt="photo of Dale">
+                    <p>Dale Byrd like the post Facebook's Changes for 2019</p>
+                    <p>5 hours ago</p>
+                    <a><i class="arrow right"></i></a>
+                  </li>
+                  <li>
+                    <img class="images" src="images/member-3.jpg" alt="photo of Dawn">
+                    <p>Dawn Wood commented on Facebook's Changes for 2019</p>
+                    <p>5 hours ago</p>
+                    <a><i class="arrow right"></i></a>
+                  </li>
+                  <li>
+                    <img class="images" src="images/member-4.jpg" alt="photo of Dan">
+                    <p>Dan Oliver posted YourApp's SEO Tips</p>
+                    <p>1 day ago</p>
+                    <a><i class="arrow right"></i></a>
+                  </li>
+               </ul>
+             </div><!--.recentActivity-->
+             <div class = "messageUser flex">
+                  <h3>Message User</h3>
+                  <input list="userNames" id="searchForUser">
+                    <datalist id="userNames">
+                       <option value="Victoria Chambers">
+                       <option value="Dale Byrd">
+                       <option value="Dawn Wood">
+                       <option value="Dan Oliver">
+                   </datalist>
+                   <textarea placeholder="Message for User" class="textArea"></textarea>
+                  <button type="submit" class="submitBtn">Send</button>
+           </div><!--.messageUser-->
+             <div class = "settings flex">
+               <h3>Settings</h3>
+               <p>Send Email Notafications</p>
+                <!--          toggle switch-->
+                 <label class="switch" onclick = "">
+                      <input type="checkbox" id="checkboxOne" checked>
+                      <span class="slider round">
+                        <span>On</span>
+                        <span>Off</span>
+                      </span>
+                 </label>
+                   <p>Set Profile to Public</p>
+                    <label class="switch" onclick = "">
+                      <input type="checkbox" id="checkboxTwo" checked>
+                      <span class="slider round">
+                        <span>On</span>
+                        <span>Off</span>
+                      </span>
+                 </label>
+                <select name="timeZone" class="timeZone">
+                    <option value="" disabled selected>Select time zone</option>
+                    <option value="cet">CET(Central European Tme)</option>
+                    <option value="UK">UK</option>
+                    <option value="japan">Japan</option>
+                    <option value="Australia,Cidney">Sidney, Australia</option>
+                    <option value="Los Angeles">Los Angeles</option>
+              </select>
+
+              <button type="submit" id="save" onclick="saveSettings()">Save</button>
+              <button type="submit" id="remove" onclick="removeSettings()">Cancel</button>
+            </div><!--.settings-->
+           </section><!--.newM-->
+        </div><!--main-->
+      </div><!--flexbox-->
+      <script src="js/jquery-1.11.2.min.js"></script>
+       <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script> 
+<!--       <script src="https://d3js.org/d3.v5.min.js"></script> -->
+      <script src="js/charts.js"></script>
+      <script src = "js/localStorage.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+  </html>
